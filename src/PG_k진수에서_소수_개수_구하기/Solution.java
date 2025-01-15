@@ -4,11 +4,10 @@ package PG_k진수에서_소수_개수_구하기;
 class Solution {
     public int solution(int n, int k) {
         int answer = 0;
-
         String[] arr = Integer.toString(n, k).split("0");
 
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i].isEmpty() ||arr[i].equals("1")) {
+            if (arr[i].isEmpty() || arr[i].equals("1")) {
                 continue;
             }
 
